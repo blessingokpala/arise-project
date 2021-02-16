@@ -1,13 +1,99 @@
+:root {
+  --primary-white: #ffffff;
+  --primary-yellow: #fdb833;
+  --primary-blue: #000714;
+  --primary-black: #000000;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.navbar-brand img {
-  height: 70px;
-  width: 110px;
+/*********** Navbar **************/
+#arise-navbar {
+  background-color: var(--primary-blue) !important;
+  
 }
-.navbar-brand h1, img {
+.navbar-brand img {
+  height: 4.375rem;
+  width: 6.875rem;
+  border-radius: 0.5rem;
+}
+.nav-link {
+  text-transform: uppercase;
+  color: #fff !important;
+  font-size: 1.2rem;
+}
+.nav-link:hover {
+  color: var(--primary-yellow) !important;
+}
+.navbar-toggler-icon, button { 
+background-color: var(--primary-black) !important;
+}
+
+/*********** Header Section ************/
+.header-container {
+  position: relative;
+  background: url(hero-image.png) no-repeat center center/cover;
+  height: 100vh;
+  margin-top: 80px;
+}
+/* for overlay on the background image */
+.header-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-info {
   display: flex;
-  flex-direction: row;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--primary-white);
+  margin: auto;
+  height: 100%;
+  z-index: 2;
+}
+.hero-info h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*********** Typed Effect ************/
+.typed-text {
+  font-size: 3rem;
+}
+/*********** Header Button ************/
+
+.btn-outline-dark {
+  background-color: var(--primary-yellow) !important;
+  color: var(--primary-white) !important;
+  font-size: 1.5rem !important;
+  cursor: pointer;
+  font-weight: bold !important;
+  border: 2px solid var(--primary-white) !important;
+  margin-top: 3rem;
+}
+.btn:hover {
+  color: var(--primary-blue) !important;
+}
+/********** particles ***********/
+.tsparticles-canvas-el {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+#about, #technologies, #projects, #contact {
+  margin-top: 150px; 
+}
+@media(max-width: 768px) {
+
 }
