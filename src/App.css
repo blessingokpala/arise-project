@@ -94,6 +94,41 @@ background-color: var(--primary-black) !important;
 #about, #technologies, #projects, #contact {
   margin-top: 150px; 
 }
-@media(max-width: 768px) {
+.card-body {
+  background-color: var(--primary-yellow);
+  height: 550px;
+}
 
+#notfound {
+  background: url(notfound.png) no-repeat center center/cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*********Contact page Submit button **********/
+#submit-button {
+  color: var(--primary-white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#submit-button .btn:hover {
+  color: #fdb833;
+}
+.footer {
+  height: 50vh;
+  background-color: #0d1e3d;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px) {
+  #notfound {
+    width: 90vw; 
+  }
+  
+  footer, p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }

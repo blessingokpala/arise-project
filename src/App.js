@@ -5,13 +5,18 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import Particles from 'react-particles-js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Footer from './components/Footer';
+// React router import
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+// import pages
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Technologies from "./components/pages/Technologies";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
+import Notfound from "./components/pages/Notfound";
+
+
 
 function App() {
   return (
@@ -32,13 +37,14 @@ function App() {
                 }} />
         <Navbar />
         <Switch>
-          <Route path="/home" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/technologies" component={Technologies}/>
-          <Route path="/projects" component={Projects}/>
-          <Route path="/contact" component={Contact}/>
+          <Route exact path="/" component={Home} /> 
+          <Route path="/about" component={About} />
+          <Route path="/technologies" component={Technologies} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+          <Route component={Notfound} />
         </Switch>
-        
+        <Footer />
     </>
   );
 }
