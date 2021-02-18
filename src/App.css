@@ -94,10 +94,6 @@ background-color: var(--primary-black) !important;
 #about, #technologies, #projects, #contact {
   margin-top: 150px; 
 }
-.card-body {
-  background-color: var(--primary-yellow);
-  height: 550px;
-}
 
 #notfound {
   background: url(notfound.png) no-repeat center center/cover;
@@ -106,6 +102,12 @@ background-color: var(--primary-black) !important;
 }
 
 /*********Contact page Submit button **********/
+.card-body {
+  background-color: var(--primary-yellow);
+  height: 550px;
+  z-index: 4; /**** This is to bring forward the form due to the react tsparticles ****/
+}
+
 #submit-button {
   color: var(--primary-white);
   font-size: 1.2rem;
@@ -113,8 +115,8 @@ background-color: var(--primary-black) !important;
   border-radius: 5px;
   cursor: pointer;
 }
-#submit-button .btn:hover {
-  color: #fdb833;
+.btn:hover {
+  color: var(--primary-yellow) !important;
 }
 .footer {
   height: 50vh;
