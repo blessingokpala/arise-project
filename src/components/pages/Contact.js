@@ -14,7 +14,7 @@ function Contact() {
             <input type="name" className="form-control" id="name" />
               <label for="email">Email address:</label>
               <input type="email" className="form-control" id="email" />
-              <label for="message" placeholder="message name">Message</label>
+              <label for="message" placeholder="Write message">Message</label>
             <textarea rows="5" type="message" className="form-control" id="message" />
             </div>
         <button id="submit-button" type="submit" className="btn">SUBMIT</button>
