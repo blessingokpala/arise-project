@@ -1,5 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { Button } from '@material-ui/core';
 
 function Header() {
   return (
@@ -11,13 +12,11 @@ function Header() {
               strings={["Shine", "and", "Glow..."]}
               typeSpeed={50}
               backSpeed={70}
-              loop
-          />
-          <div className="button">
-          <button type="button" class="btn btn-outline-dark">CONTACT US</button>
+              loop/>
+          <Button className="header-button" variant="contained" color="primary">CONTACT US</Button>
           </div>
         </div>
-      </div>
+      
   )
 }
 
