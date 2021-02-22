@@ -17,10 +17,6 @@ function Technologies() {
           <img src={ReactLogo} alt="react img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -29,10 +25,6 @@ function Technologies() {
           <img src={JavaLogo} alt="java img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -41,10 +33,6 @@ function Technologies() {
     <img src={RailsLogo} alt="rails img" />
   </div>
   <div className="contents">
-    <div>
-      <h2>Title</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-    </div>
   </div>
   </div>
 
@@ -53,10 +41,6 @@ function Technologies() {
           <img src={MongodbLogo} alt="mongodb img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -65,10 +49,6 @@ function Technologies() {
           <img src={JavascriptLogo} alt="javascript img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -77,10 +57,6 @@ function Technologies() {
           <img src={PythonimgLogo} alt="python img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -89,10 +65,6 @@ function Technologies() {
           <img src={CLangLogo} alt="c# img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 
@@ -101,10 +73,6 @@ function Technologies() {
           <img src={NodejsLogo} alt="nodejs img" />
         </div>
         <div className="contents">
-          <div>
-            <h2>Title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facilis!</p>
-          </div>
         </div>
         </div>
 

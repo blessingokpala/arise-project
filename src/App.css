@@ -93,10 +93,17 @@ background-color: var(--primary-black) !important;
   z-index: 3;
 }
 
-#technologies, #projects, #contact {
+#contact {
   margin-top: 90px; 
 }
 
+#projects {
+  margin-top: 120px;
+}
+#projects h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
 #notfound {
   background: url(notfound.png) no-repeat center center/cover;
   width: 100vw;
@@ -104,15 +111,16 @@ background-color: var(--primary-black) !important;
 }
 /*******About us page**********/
 #about {
-  height: 100vh;
+  height: 1400px;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 70px;
   color: var(--primary-black);
   font-size: 1.2rem;
   line-height: 2rem;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(120,135,212,1) 0%, rgba(239,243,245,1) 100%);  /****** The double background properties are for the linear gradient colors *********/
   clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 86%, 20% 100%, 0 89%, 0% 20%); /****** added shape to the background ******/
+
 }
 
 #about h1 {
@@ -125,6 +133,7 @@ background-color: var(--primary-black) !important;
 #technologies {
   height: 100%;
   width: 100vw;
+  margin-top: 90px;
   background: rgb(2,80,29);
 background: radial-gradient(circle, rgba(2,80,29,1) 44%, rgba(0,14,73,1) 80%, rgba(179,125,11,1) 100%);
 }
@@ -133,8 +142,8 @@ background: radial-gradient(circle, rgba(2,80,29,1) 44%, rgba(0,14,73,1) 80%, rg
   flex-direction: row;
   flex-wrap: wrap;
   width: 1200px;
-  margin: 70px auto 0;
-  height: 1000px;
+  margin: 30px auto 0;
+  height: 700px;
   background: #ebebec;
 }
 
@@ -146,6 +155,9 @@ background: radial-gradient(circle, rgba(2,80,29,1) 44%, rgba(0,14,73,1) 80%, rg
   box-sizing: border-box;
   display: inline-block;
   padding-top: 20px;
+}
+.container .tech-box img {
+  margin-top: 40px;
 }
 /*********Contact page Submit button **********/
 .card-body {
@@ -171,14 +183,90 @@ background: radial-gradient(circle, rgba(2,80,29,1) 44%, rgba(0,14,73,1) 80%, rg
   color: var(--primary-white);
   border-top: 5px solid var(--primary-black);
 }
+.footer h4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 2rem;
+}
+@media(max-width: 1366px) {
+
+  #technologies .container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    height: 1000px; 
+    background: none;
+  }
+  #about {
+    height: 1400px;
+  }
+  #contact {
+    height: 700px;
+  }
+}
 
 @media(max-width: 768px) {
+  #about {
+    height: 1400px;
+  }
   #notfound {
     width: 90vw; 
   }
-  
+  #technologies .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1200px;
+    background: none;
+    
+  }
+  .container .box-image img {
+    margin-top: 5px;
+  }
+  .container .tech-box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer h4 {
+    margin-top: 10px;
+    margin-bottom: 1px;
+    text-align: center;
+    font-size: 2rem;
+  }
   footer, p {
     margin-right: 10px;
     margin-left: 10px;
+  }
+}
+
+@media(max-width: 568px) {
+  .header-container {
+    height: 800px;
+  }
+  .header-container::before {
+    height: 800px;
+  }
+  #about {
+    height: 2400px;
+    clip-path: none;
+    margin-top: 30px;
+  }
+  #technologies .container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    height: 2400px;
+    background: none;
+    margin-top: -10px;
+  }
+  #contact button {
+    margin-top: -10px;
   }
 }
